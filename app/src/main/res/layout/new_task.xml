@@ -1,0 +1,72 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <EditText
+        android:id="@+id/newTaskText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:hint="New Task"
+        android:layout_margin="20dp">
+
+    </EditText>
+
+    <com.google.android.material.chip.ChipGroup
+        android:id="@+id/chip_group_priority"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:singleLine="true"
+        android:layout_marginTop="60dp"
+        android:padding="15dp">
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chip_high"
+            android:text="High"
+            android:checkable="true"
+            app:chipBackgroundColor="@color/colorHigh"
+            android:textColor="@android:color/white"
+            app:chipIcon="@drawable/baseline_electric_bolt"
+            app:chipStrokeWidth="0dp"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"/>
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chip_medium"
+            android:text="Medium"
+            android:checkable="true"
+            app:chipBackgroundColor="@color/colorMedium"
+            android:textColor="@android:color/white"
+            app:chipIcon="@drawable/baseline_electric_bolt"
+            android:layout_height="wrap_content"
+            app:chipStrokeWidth="0dp"
+            android:layout_width="wrap_content"/>
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chip_low"
+            android:text="Low"
+            android:checkable="true"
+            app:chipBackgroundColor="#B3A425"
+            android:textColor="@android:color/white"
+            app:chipIcon="@drawable/baseline_electric_bolt"
+            android:layout_height="wrap_content"
+            app:chipStrokeWidth="0dp"
+            android:layout_width="wrap_content"/>
+
+    </com.google.android.material.chip.ChipGroup>
+    <Button
+        android:id="@+id/newtaskbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/newTaskText"
+        android:layout_alignParentEnd="true"
+        android:textSize="16sp"
+        android:text="Save"
+        android:textAllCaps="false"
+        android:background="@android:color/transparent"
+        android:textColor="@android:color/darker_gray">
+
+    </Button>
+</RelativeLayout>

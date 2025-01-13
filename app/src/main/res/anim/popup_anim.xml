@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Scale animation to make the image grow from the center -->
+    <scale
+        android:fromXScale="0.0"
+        android:toXScale="1.0"
+        android:fromYScale="0.0"
+        android:toYScale="1.0"
+        android:duration="1000"
+        android:interpolator="@android:anim/accelerate_decelerate_interpolator"/>
+
+    <!-- Alpha animation to fade in the image -->
+    <alpha
+        android:fromAlpha="0.0"
+        android:toAlpha="1.0"
+        android:duration="1000"
+        android:startOffset="0"
+        android:interpolator="@android:anim/accelerate_decelerate_interpolator"/>
+
+    <translate
+        android:fromXDelta="0%"
+        android:toXDelta="0%"
+    android:fromYDelta="0%"
+    android:toYDelta="0%"
+    android:duration="1000"
+    android:startOffset="0"
+    android:interpolator="@android:anim/accelerate_decelerate_interpolator"/>
+</set>
