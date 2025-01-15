@@ -8,5 +8,6 @@
     <color name="colorHigh">#EA5B69</color> <!-- Red -->
     <color name="colorMedium">#FF9800</color> <!-- Yellow -->
     <color name="colorLow">#B3A425</color>  <!-- Green -->
-
+    <color name="selectedChipColor">@android:color/holo_red_dark</color> <!-- Color when selected -->
+    <color name="deselectedChipColor">#9E9E9E</color>
 </resources>

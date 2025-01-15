@@ -2,6 +2,8 @@
     <!-- Base application theme. -->
     <style name="Base.Theme.ToDoApp" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your dark theme here. -->
-         <item name="colorPrimary">@android:color/holo_green_dark</item>
+        <item name="colorPrimary">@android:color/holo_red_dark</item>
+        <item name="colorPrimaryDark">@android:color/holo_red_dark</item>
+        <item name="colorAccent">@android:color/white</item>
     </style>
 </resources>

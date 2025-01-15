@@ -122,8 +122,6 @@ class ToDoAdapter(private val db: DatabaseHandler, private val activity: MainAct
         val task: CheckBox = view.findViewById(R.id.tocheckbox)
         val deleteButton: ImageButton = view.findViewById(R.id.btndelete)
         val editButton: ImageButton = view.findViewById(R.id.btnedit)
-        //val priorityText: TextView = view.findViewById(R.id.priority_chip)
         val priorityChip: Chip = view.findViewById(R.id.priority_chip)
-
     }
 }

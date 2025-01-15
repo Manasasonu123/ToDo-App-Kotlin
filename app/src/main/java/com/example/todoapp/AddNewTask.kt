@@ -110,6 +110,23 @@ class AddNewTask : BottomSheetDialogFragment() {
                 // Get the first selected chip ID (or null if no chip is selected)
                 val selectedChipId = checkedIds.firstOrNull()
 
+                // Use a non-null context from Activity or View
+                val context = group.context // This retrieves a non-null context
+
+                for (i in 0 until group.childCount) {
+                    val chip = group.getChildAt(i) as Chip
+                    if (chip.id == selectedChipId) {
+                        // Change color for the selected chip
+                        chip.setChipBackgroundColorResource(R.color.selectedChipColor)
+                        chip.setTextColor(ContextCompat.getColor(context, R.color.white))
+                    } else {
+                        // Reset color for unselected chips
+                        chip.setChipBackgroundColorResource(R.color.deselectedChipColor)
+                        chip.setTextColor(ContextCompat.getColor(context, R.color.white))
+                    }
+                }
+
+
                 if (selectedChipId != null) {
                     val selectedChip = group.findViewById<Chip>(selectedChipId)
                     selectedPriority = when (selectedChip?.id) {
